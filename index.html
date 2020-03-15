@@ -4,22 +4,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Repeating Triangle Pattern</title>
-<style type="text/css">
-body {
-  margin: 0;
-}
-canvas {
-  display: block;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="css/main.css">
 
 <body data-rsssl=1>
 	
+  <canvas id='main-canvas'></canvas>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	
 
 <script type="text/javascript">
-var canvas = document.createElement('canvas');
+var canvas = document.getElementById("main-canvas");
 var canvasWidth = canvas.width = window.innerWidth;
 var canvasHeight = canvas.height = window.innerHeight;
 var ctx = canvas.getContext('2d');
